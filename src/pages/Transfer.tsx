@@ -16,7 +16,7 @@ const Transfer = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
 
-  const quickAmounts = [
+  const quickAmounts: { value: number; unit: "MB" | "GB" }[] = [
     { value: 100, unit: "MB" },
     { value: 500, unit: "MB" },
     { value: 1, unit: "GB" },
